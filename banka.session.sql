@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS banka;
+USE banka;
+CREATE TABLE IF NOT EXISTS Customers(
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(150) NOT NULL,
+    email VARCHAR(150) UNIQUE,
+    phone VARCHAR(150),
+    registration_date DATETIME NOT NULL
+);
+
+

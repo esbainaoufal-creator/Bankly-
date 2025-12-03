@@ -16,3 +16,28 @@ SELECT * FROM Transactions;
 SELECT * FROM Accounts WHERE balance > 10000;
 
 SELECT * FROM Accounts WHERE balance <= 0;
+
+SELECT * FROM Transactions WHERE transaction_type='debit';
+
+SELECT * FROM Transactions WHERE transaction_type='credit';
+
+SELECT * FROM Transactions WHERE account_id=1;
+
+SELECT c.* FROM Customers c 
+JOIN Accounts a ON c.id=a.customer_id
+WHERE a.advisor_id=2;
+
+SELECT * FROM Accounts WHERE account_type='Savings';
+
+SELECT * FROM Transactions WHERE amount >= 500;
+
+SELECT * FROM Accounts WHERE customer_id=1;
+
+SELECT * FROM Accounts ORDER BY balance ASC;
+
+SELECT * FROM Transactions ORDER BY amount DESC;
+
+SELECT * FROM Transactions ORDER BY amount DESC LIMIT 5;
+
+
+
